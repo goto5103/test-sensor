@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.3.13/d3.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/epoch/0.8.4/js/epoch.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/epoch/0.8.4/css/epoch.min.css" integrity="sha512-vg5Y7XDOfPBY8A7drxCyYMoBGxqL/5cvxfBuUgqcfvz6y8q7/rLT+LpxVxbljx33aNZwH4BbiQIO8zgtvCCkUQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="requestPermission" onClick="deviceMotionRequest()">
+      イベント許可（iOS用）
+    </button>
+    <div class="containerGyro">
+        <h2>ジャイロ</h2>
+        <div id="gyroValues" class="values">
+            <p class="beta">x(beta):<span>0</span></p>
+            <p class="gamma">y(gamma):<span>0</span></p>
+            <p class="alpha">z(alpha):<span>0</span></p>
+        </div>
+        <div id="chartGyro" class="epoch" style="width: 100%; height: 200px"></div>
+    </div>
+    <div class="containerAcceleration">
+        <h2>加速度</h2>
+        <div id="accelerationValues" class="values">
+            <p class="xa">x:<span>0</span></p>
+            <p class="ya">y:<span>0</span></p>
+            <p class="za">z:<span>0</span></p>
+        </div>
+        <div id="chartAcceleration" class="epoch" style="width: 100%; height: 200px"></div>
+    </div>
+    <div class="containerAccelerationGravity">
+        <h2>重力加速度(m/s^2)</h2>
+        <div id="accelerationGravityValues" class="values">
+            <p class="xg">x:<span>0</span></p>
+            <p class="yg">y:<span>0</span></p>
+            <p class="zg">z:<span>0</span></p>
+        </div>
+        <div id="chartAccelerationGravity" class="epoch" style="width: 100%; height: 200px"></div>
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>

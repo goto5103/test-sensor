@@ -1,0 +1,27 @@
+.epoch .category1 .line {
+    stroke: #dc3545;
+}
+
+.epoch .category2 .line {
+    stroke: #17a2b8;
+}
+
+.epoch .category3 .line {
+    stroke: #17b817;
+}
+
+.values p:nth-child(1) {
+    color: #17a2b8;
+}
+
+.values p:nth-child(2) {
+    color: #17b817;
+}
+
+.values p:nth-child(3) {
+    color: #dc3545;
+}
+
+#gyroValues>p {
+    margin-right: 1em;
+}
