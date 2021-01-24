@@ -52,7 +52,7 @@ const timer = window.setInterval(() => {
 
 
 // データ範囲
-var rangeGyro = [-100, 360];
+var rangeGyro = [-180, 360];
 var rangeAcceleration = [-15, 15];
 var rangeAccelerationGravity = [-15, 15];
 
