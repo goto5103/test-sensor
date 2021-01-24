@@ -53,8 +53,8 @@ const timer = window.setInterval(() => {
 
 // データ範囲
 var rangeGyro = [-180, 360];
-var rangeAcceleration = [-15, 15];
-var rangeAccelerationGravity = [-15, 15];
+var rangeAcceleration = [-50, 50];
+var rangeAccelerationGravity = [-50, 50];
 
 // 初期データ
 var dataGyro = [{
@@ -126,10 +126,10 @@ const chartAcceleration = $('#chartAcceleration').epoch({
     type: 'time.line',
     data: dataAcceleration,
     axes: ['bottom', 'left', 'right'],
-    // range: { //軸の範囲
-    //     left: rangeAcceleration,
-    //     right: rangeAcceleration,
-    // },
+    range: { //軸の範囲
+        left: rangeAcceleration,
+        right: rangeAcceleration,
+    },
     queueSize: 1,
     windowSize: 50,
     ticks: {
@@ -147,10 +147,10 @@ const chartAccelerationGravity = $('#chartAccelerationGravity').epoch({
     type: 'time.line',
     data: dataAccelerationGravity,
     axes: ['bottom', 'left', 'right'],
-    // range: { //軸の範囲
-    //     left: rangeAccelerationGravity,
-    //     right: rangeAccelerationGravity,
-    // },
+    range: { //軸の範囲
+        left: rangeAccelerationGravity,
+        right: rangeAccelerationGravity,
+    },
     queueSize: 1,
     windowSize: 50,
     ticks: {
