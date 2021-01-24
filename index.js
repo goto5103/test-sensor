@@ -113,8 +113,8 @@ const chartGyro = $('#chartGyro').epoch({
     windowSize: 50,
     ticks: {
         time: 15,
-        right: 10,
-        left: 10
+        right: 12,
+        left: 12
     },
     tickFormats: {
         bottom: timeFormat,
