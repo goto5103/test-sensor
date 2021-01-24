@@ -134,8 +134,8 @@ const chartAcceleration = $('#chartAcceleration').epoch({
     windowSize: 50,
     ticks: {
         time: 15,
-        right: 7,
-        left: 7
+        right: 10,
+        left: 10
     },
     tickFormats: {
         bottom: timeFormat,
@@ -155,8 +155,8 @@ const chartAccelerationGravity = $('#chartAccelerationGravity').epoch({
     windowSize: 50,
     ticks: {
         time: 15,
-        right: 7,
-        left: 7
+        right: 10,
+        left: 10
     },
     tickFormats: {
         bottom: timeFormat,
